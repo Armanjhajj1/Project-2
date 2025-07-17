@@ -1,11 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sample Code</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recipe List - Recipe Management System</title>
+    <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="logo-section">
+                <div class="logo-circle">?</div>
+                <input type="text" class="logo-input" value="LOGO" readonly="readonly" />
+            </div>
+            <div class="header-right">
+                <div class="user-avatar-small"></div>
+                <button class="logout-btn">LOG OUT</button>
+                <div class="avatar-note">Your Avatar would be displayed here.</div>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Create New Recipe Button -->
+            <div class="create-recipe-section">
+                <button class="create-recipe-btn" onclick="window.location.href='create-recipe.html'">CREATE NEW RECIPE</button>
+            </div>
+
+            <!-- My Recipes Section -->
+            <section class="recipes-section">
+                <h2 class="section-title">My Recipes</h2>
+                <div class="recipes-grid">
+                    <!-- Recipe 1 -->
+                    <div class="recipe-card">
+                        <div class="recipe-header">
+                            <div class="recipe-name">Recipe Name</div>
+                            <div class="recipe-created">Created on: DATE</div>
+                        </div>
+                        <div class="recipe-details">
+                            <div>Last Updated:</div>
+                            <div>Cooking Notes: 4</div>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="view-recipe.html" class="action-link">[ View Recipe ]</a>
+                            <a href="share-access.html" class="action-link">[ Share/Revoke Access ]</a>
+                        </div>
+                    </div>
+
+                    <!-- Recipe 2 -->
+                    <div class="recipe-card">
+                        <div class="recipe-header">
+                            <div class="recipe-name">Recipe Name</div>
+                            <div class="recipe-created">Created on: DATE</div>
+                        </div>
+                        <div class="recipe-details">
+                            <div>Last Updated:</div>
+                            <div>Cooking Notes: 4</div>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="view-recipe.html" class="action-link">[ View Recipe ]</a>
+                            <a href="share-access.html" class="action-link">[ Share/Revoke Access ]</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Shared with Me Section -->
+            <section class="recipes-section">
+                <h2 class="section-title">Shared with Me</h2>
+                <div class="recipes-grid">
+                    <!-- Shared Recipe 1 -->
+                    <div class="recipe-card">
+                        <div class="recipe-header">
+                            <div class="recipe-name">Recipe Name</div>
+                            <div class="recipe-created">Created on: DATE</div>
+                        </div>
+                        <div class="recipe-details">
+                            <div>Last Updated:</div>
+                            <div>Cooking Notes: 4</div>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="view-recipe.html" class="action-link">[ View Recipe ]</a>
+                            <a href="share-access.html" class="action-link">[ Share/Revoke Access ]</a>
+                        </div>
+                    </div>
+
+                    <!-- Shared Recipe 2 -->
+                    <div class="recipe-card">
+                        <div class="recipe-header">
+                            <div class="recipe-name">Recipe Name</div>
+                            <div class="recipe-created">Created on: DATE</div>
+                        </div>
+                        <div class="recipe-details">
+                            <div>Last Updated:</div>
+                            <div>Cooking Notes: 4</div>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="view-recipe.html" class="action-link">[ View Recipe ]</a>
+                            <a href="share-access.html" class="action-link">[ Share/Revoke Access ]</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Navigation Notes -->
+            <div class="navigation-notes">
+                <div class="note-left">These would be left to scroll through the list of Recipes</div>
+                <div class="note-right">They do the same as the scroll bar through the list of Recipes</div>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>&copy; 2024 Recipe Management System. All rights reserved.</p>
+        </footer>
+    </div>
 </body>
 </html>
