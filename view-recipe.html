@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>View Recipe - Recipe Management System</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <h1>Recipe Management System</h1>
+            <nav class="nav-links">
+                <a href="index.html">Recipe List</a>
+                <a href="share-access.html">Share Recipe</a>
+            </nav>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Recipe Details Section -->
+            <section class="recipe-details">
+                <div class="recipe-header">
+                    <h2 class="recipe-title">Grandma's Chocolate Chip Cookies</h2>
+                    <div class="recipe-dates">
+                        <div><strong>Created:</strong> March 15, 2024 at 2:30 PM</div>
+                        <div><strong>Last Edited:</strong> March 20, 2024 at 4:45 PM</div>
+                    </div>
+                </div>
+
+                <!-- Cooking Notes Section -->
+                <div class="cooking-notes">
+                    <h3 class="notes-header">Cooking Notes &amp; Contributions</h3>
+                    
+                    <!-- Note 1 -->
+                    <article class="note-item">
+                        <img src="https://via.placeholder.com/50x50/667eea/ffffff?text=JS" alt="Jane Smith Avatar" class="note-avatar" />
+                        <div class="note-content">
+                            <div class="note-header">
+                                <span class="contributor-name">Jane Smith</span>
+                                <span></span>
+                                <span class="note-date">March 15, 2024 at 2:45 PM</span>
+                            </div>
+                            <p class="note-text">
+                                This is my grandmother's original recipe! The secret is to use room temperature butter and to not overmix the dough. 
+                                Also, make sure to chill the dough for at least 30 minutes before baking for the best texture.
+                            </p>
+                        </div>
+                    </article>
+
+                    <!-- Note 2 -->
+                    <article class="note-item">
+                        <img src="https://via.placeholder.com/50x50/28a745/ffffff?text=MJ" alt="Mike Johnson Avatar" class="note-avatar" />
+                        <div class="note-content">
+                            <div class="note-header">
+                                <span class="contributor-name">Mike Johnson</span>
+                                <span></span>
+                                <span class="note-date">March 16, 2024 at 10:15 AM</span>
+                            </div>
+                            <p class="note-text">
+                                I tried this recipe yesterday and it was amazing! I added a pinch of sea salt on top before baking, 
+                                which really enhanced the chocolate flavor. Baked for 11 minutes at 350°F and they came out perfectly golden.
+                            </p>
+                        </div>
+                    </article>
+
+                    <!-- Note 3 -->
+                    <article class="note-item">
+                        <img src="https://via.placeholder.com/50x50/dc3545/ffffff?text=EM" alt="Emily Martinez Avatar" class="note-avatar" />
+                        <div class="note-content">
+                            <div class="note-header">
+                                <span class="contributor-name">Emily Martinez</span>
+                                <span></span>
+                                <span class="note-date">March 18, 2024 at 6:20 PM</span>
+                            </div>
+                            <p class="note-text">
+                                Made these for my kids' school bake sale and they were a huge hit! I substituted half the all-purpose flour 
+                                with whole wheat flour for a healthier option. They still tasted great and had a nice nutty flavor.
+                            </p>
+                        </div>
+                    </article>
+
+                    <!-- Note 4 -->
+                    <article class="note-item">
+                        <img src="https://via.placeholder.com/50x50/6f42c1/ffffff?text=RW" alt="Robert Wilson Avatar" class="note-avatar" />
+                        <div class="note-content">
+                            <div class="note-header">
+                                <span class="contributor-name">Robert Wilson</span>
+                                <span></span>
+                                <span class="note-date">March 20, 2024 at 1:30 PM</span>
+                            </div>
+                            <p class="note-text">
+                                Pro tip: I use a cookie scoop to ensure all cookies are the same size for even baking. 
+                                Also, rotating the baking sheet halfway through baking helps with even browning. 
+                                These cookies freeze really well too - just thaw at room temperature for 10 minutes.
+                            </p>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <!-- Add New Note Form -->
+            <section class="add-note-form">
+                <h3>Add Your Cooking Note</h3>
+                <form action="#" method="post">
+                    <div class="form-group">
+                        <label for="note-content">Your Contribution:</label>
+                        <textarea 
+                            id="note-content" 
+                            name="note-content" 
+                            placeholder="Share your cooking tips, modifications, or experiences with this recipe..."
+                            required="required"
+                        ></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Add Note</button>
+                </form>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>&copy; 2024 Recipe Management System. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
